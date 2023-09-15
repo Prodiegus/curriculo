@@ -1,0 +1,30 @@
+.img{
+    width: auto;
+    height: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px rgba(41, 25, 65, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.table-div{
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  background-color: #291941;
+  color: aliceblue;
+}
+
+.personal-data{
+  text-align: right;
+  padding-left: 55%;
+}
+
+.personal-data img{
+  width: 30px;
+  height: 30px;
+}
+
