@@ -1,7 +1,7 @@
 .img{
     width: auto;
     height: 100%;
-    max-height: 200px;
+    max-height: 180px;
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
@@ -20,7 +20,9 @@
 
 .personal-data{
   text-align: right;
-  padding-left: 55%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .personal-data img{
@@ -28,3 +30,7 @@
   height: 30px;
 }
 
+.vertical{
+  display: flex;
+  align-items: center; /* Alineación vertical */
+}

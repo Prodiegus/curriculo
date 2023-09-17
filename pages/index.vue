@@ -1,65 +1,98 @@
 <template>
   <div>
-    <header class="table-div">
-      <table>
-        <tr>
-          <td>
-            <img class="img" src="../static/img/diego.jpg" alt="Logo">
-          </td>
-          <td>
-            <h1>
-              DIEGO DAVID ABRAHAM<br>
-              <b>FERNÁNDEZ VELÁSQUEZ</b>
-            </h1>
-            <h6 style="text-align: left">Estudiante de Ingenieria Civil en Computación</h6>
-          </td>
-          <td class="personal-data">
-            <table>
-              <tr>
-                <td>20.509.736-8</td>
-                <td>
-                  <img src="../static/img/id.png" alt="Logo">
-                </td>
-              </tr>
-              <tr>
-                <td>Curico, Maule, Chile</td>
-                <td>
-                  <img src="../static/img/lugar.png" alt="Logo">
-                </td>
-              </tr>
-              <tr>
-                <td>+56 9 4189 3895</td>
-                <td>
-                  <img src="../static/img/numero.png" alt="Logo">
-                </td>
-              </tr>
-              <tr>
-                <td>dfernandez19@alumnos.utalca.cl</td>
-                <td>
-                  <img src="../static/img/email.png" alt="Logo">
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="https://www.linkedin.com/in/diego-fern%C3%A1ndez-0b853b261?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BVt1BZ0cKRXWDbAIU2EtN%2BQ%3D%3D" target="_blank">LinkedIn</a>
-                </td>
-                <td>
-                  <img src="../static/img/linkedin.png" alt="Logo">
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="github.com/prodiegus" target="_blank">GitHub</a>
-                </td>
-                <td>
-                  <img src="../static/img/github.png" alt="Logo">
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
+    <header class="container-fluid table-div">
+      <div class="row">
+        <div class="col-2">
+          <img class="img" src="../static/img/diego.jpg">
+        </div>
+        <div class="col-4 vertical">
+          <h1>Diego David Abraham<br>
+          <b>Fernández Velásquez</b></h1>
+        </div>
+        <div class="col">
+          <lu class="personal-data text-right">
+            <li>
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    20.509.736-8
+                  </div>
+                  <div class="col-1">
+                    <img src="../static/img/id.png">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    Cúrico, Maule, Chile
+                  </div>
+                  <div class="col-1">
+                    <img src="../static/img/lugar.png">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    +56 9 4189 3895
+                  </div>
+                  <div class="col-1">
+                    <img src="../static/img/numero.png">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    dfernandez19@alumnos.utalca.cl
+                  </div>
+                  <div class="col-1">
+                    <img src="../static/img/email.png">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <a href="www.linkedin.com/in/dfernandez" target="_blank">Linkedin</a>
+                  </div>
+                  <div class="col-1">
+                    <img src="../static/img/linkedin.png">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <a href="www.github.com/Prodiegus" target="_blank">Github</a>
+                  </div>
+                  <div class="col-1">
+                    <img src="../static/img/github.png">
+                  </div>
+                </div>
+              </div>
+            </li>
+          </lu>
+        </div>
+      </div>
     </header>
+    <article>
+      <h2>SOBRE MI</h2>
+      <p>
+        Estudiante bilingüe de Ingeniería Civil en Computación con experiencia en liderar equipos y organizar proyectos, responsable, innovador y carismático. Con destacada pasión, dedicación e interés por mi carrera. Busco oportunidades para crecer profesionalmente en un entorno tecnológico dinámico.
+      </p>
+    </article>
   </div>
 </template>
 
