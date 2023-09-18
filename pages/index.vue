@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="font-type">
     <header class="container-fluid table-div">
       <div class="row">
         <div class="col-2">
@@ -87,11 +87,82 @@
         </div>
       </div>
     </header>
-    <article>
-      <h2>SOBRE MI</h2>
-      <p>
-        Estudiante bilingüe de Ingeniería Civil en Computación con experiencia en liderar equipos y organizar proyectos, responsable, innovador y carismático. Con destacada pasión, dedicación e interés por mi carrera. Busco oportunidades para crecer profesionalmente en un entorno tecnológico dinámico.
-      </p>
+    <article class="container">
+      <div class="row">
+        <div class="col-1">
+
+        </div>
+        <div class="col">
+          <h3>SOBRE MI</h3>
+          <p>
+            Estudiante bilingüe de Ingeniería Civil en Computación con experiencia en liderar equipos y organizar proyectos, responsable, innovador y carismático. Con destacada pasión, dedicación e interés por mi carrera. Busco oportunidades para crecer profesionalmente en un entorno tecnológico dinámico.
+          </p>
+        </div>
+        <div class="col-1">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1">
+
+        </div>
+        <div class="col">
+          <h3>EDUCACIÓN</h3>
+          <lu style="list-style-type: none">
+            <li>
+              <h5>
+                <b class="letra-morada">Ingeniería Civil en Computación</b>
+                | Universidad de Talca
+              </h5>
+              <p>
+                2019 - ACTUALIDAD
+              </p>
+              <p>
+                Ayudante de profesor en Algoritmos y Estructuras de Datos
+              </p>
+              <p>
+                Ayudante de profesor en Pensamiento Computacional
+              </p>
+              <p>
+                Ayudante de profesor en Lenguajes y Paradigmas de la Programación
+              </p>
+              <p>
+                Intercambio de Estudios a Universidad de Monterrey, México OT'22
+              </p>
+            </li>
+            <li>
+              <h5>
+                <b class="letra-morada">Enseñanza Media</b>
+                | Instituto Chacabuco de Colina
+              </h5>
+              <p>
+                2014 - 2018
+              </p>
+              <p>
+                Curso de inglés por municipalidad de Colina
+              </p>
+              <p>
+                Pasantia a Nueva Yorl, para perfecionar el idioma inglés
+              </p>
+              <p>
+                Partisipación en programa yo C+ de la Universidad Federico Santa María para aprendizaje de programación competitiva en C++
+              </p>
+            </li>
+            <li>
+              <h5>
+                <b class="letra-morada">Certificación PET B1</b>
+                | Cambridge University
+              </h5>
+              <p>
+                OCTUBRE DEL 2018
+              </p>
+            </li>
+          </lu>
+        </div>
+        <div class="col-1">
+
+        </div>
+      </div>
     </article>
   </div>
 </template>
@@ -129,9 +200,6 @@
 <style scoped>
   /* Estilos específicos para esta página */
   @import "@/static/css/index.css"; /* Ruta al archivo CSS */
-  template {
-    font-family: "Times New Roman", Times, serif;
-  }
   header a {
     color: aliceblue;
     text-decoration: underline;

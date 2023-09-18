@@ -34,3 +34,17 @@
   display: flex;
   align-items: center; /* Alineación vertical */
 }
+
+.font-type{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.font-type h5{
+  font-weight: bold;
+}
+.font-type h3{
+  font-weight: bold;
+}
+.letra-morada{
+  color: #291941;
+}
