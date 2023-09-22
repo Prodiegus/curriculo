@@ -11,6 +11,7 @@
 }
 
 .table-div{
+  position: sticky;
   width: 100%;
   margin: 0;
   padding: 10px;
@@ -47,4 +48,20 @@
 }
 .letra-morada{
   color: #291941;
+}
+
+.programacion{
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+/* Aplica márgenes a las celdas de encabezado */
+.programacion th {
+  padding-right: 10px; /* Ajusta la cantidad de separación horizontal */
+  padding-left: 10px; /* Ajusta la cantidad de separación horizontal */
+}
+
+/* Aplica márgenes a las celdas de datos */
+.programacion td {
+  padding-right: 10px; /* Ajusta la cantidad de separación horizontal */
+  padding-left: 10px; /* Ajusta la cantidad de separación horizontal */
 }

@@ -1,9 +1,9 @@
 <template>
   <div class="font-type">
-    <header class="container-fluid table-div">
+    <header id="header" class="container-fluid table-div">
       <div class="row">
         <div class="col-2">
-          <img class="img" src="../static/img/diego.jpg">
+          <img class="img" src="../static/img/diego.jpg" alt="yo">
         </div>
         <div class="col-4 vertical">
           <h1>Diego David Abraham<br>
@@ -18,7 +18,7 @@
                     20.509.736-8
                   </div>
                   <div class="col-1">
-                    <img src="../static/img/id.png">
+                    <img src="../static/img/id.png" alt="RUT">
                   </div>
                 </div>
               </div>
@@ -30,7 +30,7 @@
                     Cúrico, Maule, Chile
                   </div>
                   <div class="col-1">
-                    <img src="../static/img/lugar.png">
+                    <img src="../static/img/lugar.png" alt="ubicacion">
                   </div>
                 </div>
               </div>
@@ -42,7 +42,7 @@
                     +56 9 4189 3895
                   </div>
                   <div class="col-1">
-                    <img src="../static/img/numero.png">
+                    <img src="../static/img/numero.png" alt="telefono">
                   </div>
                 </div>
               </div>
@@ -54,7 +54,7 @@
                     dfernandez19@alumnos.utalca.cl
                   </div>
                   <div class="col-1">
-                    <img src="../static/img/email.png">
+                    <img src="../static/img/email.png" alt="email">
                   </div>
                 </div>
               </div>
@@ -66,7 +66,7 @@
                     <a href="www.linkedin.com/in/dfernandez" target="_blank">Linkedin</a>
                   </div>
                   <div class="col-1">
-                    <img src="../static/img/linkedin.png">
+                    <img src="../static/img/linkedin.png" alt="linkedin">
                   </div>
                 </div>
               </div>
@@ -78,7 +78,7 @@
                     <a href="www.github.com/Prodiegus" target="_blank">Github</a>
                   </div>
                   <div class="col-1">
-                    <img src="../static/img/github.png">
+                    <img src="../static/img/github.png" alt="github">
                   </div>
                 </div>
               </div>
@@ -136,16 +136,28 @@
                 | Instituto Chacabuco de Colina
               </h5>
               <p>
-                2014 - 2018
+                2015 - 2018
               </p>
               <p>
                 Curso de inglés por municipalidad de Colina
               </p>
               <p>
-                Pasantia a Nueva Yorl, para perfecionar el idioma inglés
+                Pasantia a Nueva York, para perfecionar el idioma inglés
               </p>
               <p>
                 Partisipación en programa yo C+ de la Universidad Federico Santa María para aprendizaje de programación competitiva en C++
+              </p>
+            </li>
+            <li>
+              <h5>
+                <b class="letra-morada">Enseñanza Básica</b>
+                | Colegio Abersan
+              </h5>
+              <p>
+                2009 - 2014
+              </p>
+              <p>
+                Participación en taller de folclore
               </p>
             </li>
             <li>
@@ -163,13 +175,147 @@
 
         </div>
       </div>
+      <div class="row">
+        <div class="col-1">
+
+        </div>
+        <div class="col">
+          <h3>EXPERIENCIA</h3>
+          <lu style="list-style-type: none">
+            <li>
+              <h5>
+                <b class="letra-morada">Administrador de Venta en Bodega</b>
+                | Vital Uniformes
+              </h5>
+              <p>
+                VERANO 2017
+              </p>
+              <p>
+                Encargado de la venta de uniformes de colegios, atención al cliente, manejo de caja y inventario.
+              </p>
+            </li>
+            <li>
+              <h5>
+                <b class="letra-morada">Operario de Paking</b>
+                | Copefrut
+              </h5>
+              <p>
+                TEMPORADA CEREZAS 2021
+              </p>
+              <p>
+                Seguimiento de procesos industriales
+              </p>
+              <p>
+                Trabajo en equipo
+              </p>
+            </li>
+            <li>
+              <h5>
+                <b class="letra-morada">Asesor de Ventas</b>
+                | Ripley
+              </h5>
+              <p>
+                VERANO 2022
+              </p>
+              <p>
+                Atención al cliente
+              </p>
+              <p>
+                Manejo de caja
+              </p>
+              <p>
+                Organización de productos
+              </p>
+              <p>
+                Trabajo en equipo
+              </p>
+            </li>
+          </lu>
+        </div>
+        <div class="col-1">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1">
+
+        </div>
+        <div class="col">
+          <h3>Programación</h3>
+          <table class="programacion">
+            <thead style="color: #291941">
+              <tr>
+                <th>Lenguajes</th>
+                <th>Base de Datos</th>
+                <th>Desarrollo Web</th>
+                <th>Metodologías</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <lu>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>C</li>
+                  </lu>
+                </td>
+                <td>
+                  <lu>
+                    <li>postrgresSQL</li>
+                    <li>MySQL</li>
+                    <li>Azure</li>
+                    <li>NoSQL</li>
+                  </lu>
+                </td>
+                <td>
+                  <lu>
+                    <li>HTML 5</li>
+                    <li>CSS 3</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                  </lu>
+                </td>
+                <td>
+                  <lu>
+                    <li>SCRUM</li>
+                    <li>Manifiesto Ágil</li>
+                    <li>Tradicionales</li>
+                    <li>Tableros KANBAN</li>
+                  </lu>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-1">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1">
+
+        </div>
+        <div class="col">
+          <h3>Idiomas</h3>
+          <lu style="list-style-type: none">
+            <li>Español Nativo</li>
+            <li>Inglés Intermedio-Avanzado</li>
+            <li>Alemán Básico</li>
+          </lu>
+        </div>
+        <div class="col-1">
+
+        </div>
+      </div>
     </article>
   </div>
 </template>
 
 <script>
   // Path: pages/index.vue
-  import {hola} from "@/static/js/index.js";
+  import {changeHeaderContent} from '@/static/js/index.js';
   export default {
     // Opciones de componentes de Nuxt.js
     head() {
@@ -186,15 +332,21 @@
       };
     },
     mounted() {
-      hola();
+      let header = document.getElementById("header");
+      let initialHeader = document.querySelector("header");
+      // La posición donde deseas cambiar el contenido del header
+      let scrollThreshold = 100;
+      changeHeaderContent();
+      window.addEventListener('scroll', this.cambiarHeader);
     },
     methods: {
       // Métodos personalizados del componente
-      holaMundo(){
-        hola();
+      cambiarHeader() {
+        changeHeaderContent(header, initialHeader, scrollThreshold);
       },
     },
   };
+
 </script>
 
 <style scoped>
