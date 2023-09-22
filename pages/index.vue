@@ -1,8 +1,8 @@
 <template>
   <div class="font-type">
-    <header id="header" class="container-fluid table-div">
+    <header v-if="!stickyHeader" id="header" class="container-fluid table-div">
       <div class="row">
-        <div class="col-2">
+        <div class="col-2 center">
           <img class="img" src="../static/img/diego.jpg" alt="yo">
         </div>
         <div class="col-4 vertical">
@@ -87,6 +87,40 @@
         </div>
       </div>
     </header>
+    <header v-else class="container-fluid table-div-sticky">
+      <div class="row">
+        <div class="col">
+          <h1>Diego<b>Fernández</b></h1>
+        </div>
+        <div class="col-2">
+
+        </div>
+        <div class="col">
+          <ul class="menu-list">
+            <li class="submenu"><a href="#">Inicio</a></li>
+            <li class="submenu">
+              <a href="#">Acerca de</a>
+              <ul class="submenu-list">
+                <li><a href="#">Sobre mi</a></li>
+                <li><a href="#">Educación</a></li>
+                <li><a href="#">Experiencia</a></li>
+                <li><a href="#">Programación</a></li>
+                <li><a href="#">Idiomas</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="#">Contacto</a>
+              <ul class="submenu-list">
+                <li><a href="dfernandez19@alumnos.utalca.cl">Email</a></li>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Github</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
     <article class="container">
       <div class="row">
         <div class="col-1">
@@ -315,7 +349,6 @@
 
 <script>
   // Path: pages/index.vue
-  import {changeHeaderContent} from '@/static/js/index.js';
   export default {
     // Opciones de componentes de Nuxt.js
     head() {
@@ -331,18 +364,30 @@
 
       };
     },
+    data() {
+      return {
+        stickyHeader: false,
+      };
+    },
     mounted() {
-      let header = document.getElementById("header");
-      let initialHeader = document.querySelector("header");
-      // La posición donde deseas cambiar el contenido del header
-      let scrollThreshold = 100;
-      changeHeaderContent();
-      window.addEventListener('scroll', this.cambiarHeader);
+      // Agregar un evento de desplazamiento para detectar cuando se activa el header sticky
+      window.addEventListener("scroll", this.handleScroll);
+    },
+    beforeDestroy() {
+      // Limpiar el evento de desplazamiento cuando se destruye el componente
+      window.removeEventListener("scroll", this.handleScroll);
     },
     methods: {
       // Métodos personalizados del componente
-      cambiarHeader() {
-        changeHeaderContent(header, initialHeader, scrollThreshold);
+      handleScroll() {
+        const scrollThreshold = 218;
+
+        // Agregar un retraso antes de cambiar el estado
+        clearTimeout(this.scrollTimer);
+        this.scrollTimer = setTimeout(() => {
+          // Verificar si se ha superado el umbral de desplazamiento
+          this.stickyHeader = window.pageYOffset >= scrollThreshold;
+        }, 210  ); // Ajusta el tiempo de retraso según tus necesidades
       },
     },
   };

@@ -1,7 +1,7 @@
 .img{
     width: auto;
     height: 100%;
-    max-height: 180px;
+    max-height: 200px;
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
@@ -10,15 +10,33 @@
     transition: all 0.3s ease-in-out;
 }
 
+.center{
+  text-align: center;
+
+}
+
 .table-div{
-  position: sticky;
   width: 100%;
   margin: 0;
   padding: 10px;
   background-color: #291941;
   color: aliceblue;
+  transition: transform 0.2s ease-in-out; /* Agrega una transición suave */
 }
 
+.table-div-sticky{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  background-color: #291941;
+  opacity: 1;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  color: aliceblue;
+  transform: translateY(0); /* Inicialmente, la posición de desplazamiento es 0 */
+  transition: transform 0.2s ease-in-out; /* Agrega una transición suave */
+}
 .personal-data{
   text-align: right;
   list-style-type: none;
@@ -64,4 +82,64 @@
 .programacion td {
   padding-right: 10px; /* Ajusta la cantidad de separación horizontal */
   padding-left: 10px; /* Ajusta la cantidad de separación horizontal */
+}
+
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-list li {
+  position: relative;
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+/* Estilos del menú desplegable */
+.submenu {
+  position: relative;
+}
+
+.submenu:hover .submenu-list {
+  display: block;
+}
+
+.submenu-list {
+  display: none;
+  position: absolute;
+  background-color: #291941;
+  top: 100%;
+  left: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+.submenu-list li {
+  border-bottom: 1px solid #ffffff;
+}
+
+.submenu-list a {
+  padding: 10px 20px;
+  display: block;
+}
+
+/* Estilos al pasar el mouse sobre los items del menú */
+.menu-list li:hover a {
+  background-color: #291941;
+  color: #dfbcff;
+}
+
+/* Estilos al pasar el mouse sobre los items del menú desplegable */
+.submenu-list li:hover {
+  background-color: #ffffff;
+  color: #291941;
+  border-bottom: 1px solid #291941;
 }

@@ -1,15 +1,15 @@
-// Obtén el elemento del header y el desplazamiento actual de la página
-let header = document.getElementById("header");
-let initialHeader = document.querySelector("header");
-// La posición donde deseas cambiar el contenido del header
-let scrollThreshold = 100;
-
 // Función para cambiar el contenido del header al hacer scroll
-function changeHeaderContent(let header, let initialHeader, let scrollThreshold) {
+function changeHeaderContent() {
+  console.log("leyendo js");
+  // Obtén el elemento del header y el desplazamiento actual de la página
+  const header = document.getElementById("header");
+  const initialHeader = document.querySelector("header");
+  // La posición donde deseas cambiar el contenido del header
+  const scrollThreshold = 100;
   if (window.pageYOffset >= scrollThreshold) {
     // Cambia el contenido del header al hacer scroll
-    header.innerHTML = "<div>Nombre de la Empresa</div>";
-    header.classList.add("table-div");
+    header.innerHTML = "<div>Diego Fernández</div>";
+    header.classList.add("table-div-sticky");
     initialHeader.style.display = "none"; // Oculta el contenido original del header
   } else {
     // Vuelve al contenido original del header
@@ -99,7 +99,7 @@ function changeHeaderContent(let header, let initialHeader, let scrollThreshold)
           </lu>
         </div>
       </div>`;
-    header.classList.remove("table-div");
+    header.classList.remove("table-div-sticky");
     initialHeader.classList.add("table-div");
     initialHeader.classList.add("container-fluid");
     initialHeader.style.display = "block"; // Muestra el contenido original del header
@@ -107,7 +107,7 @@ function changeHeaderContent(let header, let initialHeader, let scrollThreshold)
 }
 
 // Agrega un evento de desplazamiento para llamar a la función
-//window.addEventListener("scroll", changeHeaderContent);
+window.addEventListener("scroll", changeHeaderContent);
 
 
 
