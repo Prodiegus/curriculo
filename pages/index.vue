@@ -1,6 +1,6 @@
 <template>
   <div class="font-type">
-    <header v-if="!stickyHeader" id="header" class="container-fluid table-div">
+    <header id="header" class="container-fluid table-div">
       <div class="row">
         <div class="col-2 center">
           <img class="img" src="../static/img/diego.jpg" alt="yo">
@@ -87,10 +87,10 @@
         </div>
       </div>
     </header>
-    <header v-else class="container-fluid table-div-sticky">
+    <header v-show="stickyHeader" class="container-fluid table-div-sticky" :style="{opacity: stickyHeaderOpacity}">
       <div class="row">
-        <div class="col">
-          <h1>Diego<b>Fernández</b></h1>
+        <div class="col" style="padding-left: 10px">
+          <h1>Diego <b>Fernández</b></h1>
         </div>
         <div class="col-2">
 
@@ -101,19 +101,19 @@
             <li class="submenu">
               <a href="#">Acerca de</a>
               <ul class="submenu-list">
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Educación</a></li>
-                <li><a href="#">Experiencia</a></li>
-                <li><a href="#">Programación</a></li>
-                <li><a href="#">Idiomas</a></li>
+                <li><a href="#sobre-mi">Sobre mi</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#programacion">Programación</a></li>
+                <li><a href="#idiomas">Idiomas</a></li>
               </ul>
             </li>
             <li class="submenu">
-              <a href="#">Contacto</a>
+              <a href="#">Contactame</a>
               <ul class="submenu-list">
-                <li><a href="dfernandez19@alumnos.utalca.cl">Email</a></li>
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="#">Github</a></li>
+                <li><a href="mailto:dfernandez19@alumnos.utalca.cl">Email</a></li>
+                <li><a href="www.linkedin.com/in/dfernandez" target="_blank">Linkedin</a></li>
+                <li><a href="www.github.com/Prodiegus" target="_blank">Github</a></li>
               </ul>
             </li>
           </ul>
@@ -121,8 +121,8 @@
       </div>
     </header>
 
-    <article class="container">
-      <div class="row">
+    <article class="container separar-del-menu">
+      <div id="sobre-mi" class="row">
         <div class="col-1">
 
         </div>
@@ -136,7 +136,7 @@
 
         </div>
       </div>
-      <div class="row">
+      <div id="educacion" class="row">
         <div class="col-1">
 
         </div>
@@ -209,7 +209,7 @@
 
         </div>
       </div>
-      <div class="row">
+      <div id="experiencia" class="row">
         <div class="col-1">
 
         </div>
@@ -270,7 +270,7 @@
 
         </div>
       </div>
-      <div class="row">
+      <div id="programacion" class="row">
         <div class="col-1">
 
         </div>
@@ -327,7 +327,7 @@
 
         </div>
       </div>
-      <div class="row">
+      <div id="idiomas" class="row">
         <div class="col-1">
 
         </div>
@@ -366,6 +366,7 @@
     },
     data() {
       return {
+        stickyHeaderOpacity: 0,
         stickyHeader: false,
       };
     },
@@ -387,7 +388,12 @@
         this.scrollTimer = setTimeout(() => {
           // Verificar si se ha superado el umbral de desplazamiento
           this.stickyHeader = window.pageYOffset >= scrollThreshold;
-        }, 210  ); // Ajusta el tiempo de retraso según tus necesidades
+          if (window.pageYOffset >= scrollThreshold) {
+            this.stickyHeaderOpacity = 1; // Mostrar el header sticky con opacidad completa
+          } else {
+            this.stickyHeaderOpacity = 0; // Ocultar el header sticky
+          }
+        }, 0  ); // Ajusta el tiempo de retraso según tus necesidades
       },
     },
   };

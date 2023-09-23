@@ -26,6 +26,7 @@
 
 .table-div-sticky{
   position: sticky;
+  display: block;
   top: 0;
   width: 100%;
   margin: 0;
@@ -99,19 +100,11 @@
 
 .menu-list a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   padding: 10px 20px;
 }
 
 /* Estilos del menú desplegable */
-.submenu {
-  position: relative;
-}
-
-.submenu:hover .submenu-list {
-  display: block;
-}
-
 .submenu-list {
   display: none;
   position: absolute;
@@ -120,10 +113,11 @@
   left: 0;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .submenu-list li {
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #291941;
 }
 
 .submenu-list a {
@@ -132,14 +126,17 @@
 }
 
 /* Estilos al pasar el mouse sobre los items del menú */
-.menu-list li:hover a {
+.menu-list li:hover .submenu-list {
+  display: block;
+}
+
+/* Estilos al pasar el mouse sobre los items del menú y del menú desplegable */
+.menu-list li:hover a,
+.submenu-list li:hover {
   background-color: #291941;
   color: #dfbcff;
 }
 
-/* Estilos al pasar el mouse sobre los items del menú desplegable */
-.submenu-list li:hover {
-  background-color: #ffffff;
-  color: #291941;
-  border-bottom: 1px solid #291941;
+.separar-del-menu{
+  margin-top: 100px;
 }
