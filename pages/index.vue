@@ -51,7 +51,9 @@
               <div class="container">
                 <div class="row">
                   <div class="col">
-                    dfernandez19@alumnos.utalca.cl
+                      <a href="mailto:dfernandez19@alumnos.utalca.cl">
+                        dfernandez19@alumnos.utalca.cl
+                      <a/>
                   </div>
                   <div class="col-1">
                     <img src="../static/img/email.png" alt="email">
@@ -387,8 +389,8 @@
         clearTimeout(this.scrollTimer);
         this.scrollTimer = setTimeout(() => {
           // Verificar si se ha superado el umbral de desplazamiento
-          this.stickyHeader = window.pageYOffset >= scrollThreshold;
-          if (window.pageYOffset >= scrollThreshold) {
+          this.stickyHeader = window.scrollY >= scrollThreshold;
+          if (window.scrollY >= scrollThreshold) {
             this.stickyHeaderOpacity = 1; // Mostrar el header sticky con opacidad completa
           } else {
             this.stickyHeaderOpacity = 0; // Ocultar el header sticky
