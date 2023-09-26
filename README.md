@@ -1,5 +1,6 @@
 # curriculo
-
+### WebHost Link:
+```https://happy-rock-01fadf210.3.azurestaticapps.net/```
 ## Build Setup
 
 ```bash
