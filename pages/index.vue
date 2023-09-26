@@ -53,7 +53,7 @@
                   <div class="col">
                       <a href="mailto:dfernandez19@alumnos.utalca.cl">
                         dfernandez19@alumnos.utalca.cl
-                      <a/>
+                      </a>
                   </div>
                   <div class="col-1">
                     <img src="../static/img/email.png" alt="email">
