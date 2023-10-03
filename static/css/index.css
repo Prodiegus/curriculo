@@ -27,6 +27,7 @@
 .table-div-sticky{
   position: sticky;
   display: block;
+  display-inside: ruby;
   top: 0;
   width: 100%;
   margin: 0;
