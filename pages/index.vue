@@ -353,7 +353,7 @@
 
           </div>
           <div class="col">
-            <p class="text-black-50">
+            <p class="text-white" style="font-size: large">
               © 2021 Diego Fernández. Todos los derechos reservados.
             </p>
           </div>
