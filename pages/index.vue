@@ -51,7 +51,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col">
-                      <a href="mailto:dfernandez19@alumnos.utalca.cl">
+                      <a href="mailto:dfernandez19@alumnos.utalca.cl" title="hablemos por correo">
                         dfernandez19@alumnos.utalca.cl
                       </a>
                   </div>
@@ -65,7 +65,9 @@
               <div class="container">
                 <div class="row">
                   <div class="col">
-                    <a href="www.linkedin.com/in/dfernandez" target="_blank">Linkedin</a>
+                    <a href="https://www.linkedin.com/in/dfernandez" target="_blank" title="Este es un enlace a mi linkedin">
+                      Linkedin
+                    </a>
                   </div>
                   <div class="col-1">
                     <img src="../static/img/linkedin.png" alt="linkedin">
@@ -77,7 +79,9 @@
               <div class="container">
                 <div class="row">
                   <div class="col">
-                    <a href="www.github.com/Prodiegus" target="_blank">Github</a>
+                    <a href="https://www.github.com/Prodiegus" target="_blank" title="Este es un enlace a mi github">
+                      Github
+                    </a>
                   </div>
                   <div class="col-1">
                     <img src="../static/img/github.png" alt="github">
