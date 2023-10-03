@@ -93,7 +93,7 @@
         </div>
       </div>
     </header>
-    <header v-show="stickyHeader" class="container table-div-sticky" :style="{opacity: stickyHeaderOpacity}">
+    <header v-show="stickyHeader" class="container-fluid table-div-sticky" :style="{opacity: stickyHeaderOpacity}">
       <div class="row">
         <div class="col" style="padding-left: 10px">
           <h1>Diego <b>Fernández</b></h1>
