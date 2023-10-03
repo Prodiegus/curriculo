@@ -346,6 +346,23 @@
         </div>
       </div>
     </article>
+    <footer class="fondo-morado">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-1">
+
+          </div>
+          <div class="col">
+            <p>
+              © 2021 Diego Fernández
+            </p>
+          </div>
+          <div class="col-1">
+
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
