@@ -26,7 +26,7 @@
 
 .table-div-sticky{
   position: sticky;
-  display: flex;
+  display: block;
   top: 0;
   width: 100%;
   margin: 0;
@@ -38,6 +38,15 @@
   transform: translateY(0); /* Inicialmente, la posición de desplazamiento es 0 */
   transition: transform 0.2s ease-in-out; /* Agrega una transición suave */
 }
+
+.table-div-sticky div{
+  opacity: 1;
+}
+
+.table-div-sticky.scrolled{
+  transform: translateY(-100%); /* Desplaza el elemento fuera de la pantalla */
+}
+
 .personal-data{
   text-align: right;
   list-style-type: none;
