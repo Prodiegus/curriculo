@@ -118,8 +118,8 @@
               <a href="#">Contactame</a>
               <ul class="submenu-list">
                 <li><a href="mailto:dfernandez19@alumnos.utalca.cl">Email</a></li>
-                <li><a href="www.linkedin.com/in/dfernandez" target="_blank">Linkedin</a></li>
-                <li><a href="www.github.com/Prodiegus" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/dfernandez" target="_blank">Linkedin</a></li>
+                <li><a href="https://www.github.com/Prodiegus" target="_blank">Github</a></li>
               </ul>
             </li>
           </ul>
